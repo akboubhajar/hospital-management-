@@ -27,7 +27,7 @@ public class HospitalManagementApplication {
            p1.setMalade(false);
            p1.setDateNaissance(new Date());
 
-           Patient p2 = new Patient(null,"Yassine","Mohammed", new Date(), false,1200);
+           Patient p2 = new Patient(null,"Saddiki","Mohammed", new Date(), false,1200);
 
            Patient p3 = Patient.builder()
                    .nom("Salma")
@@ -41,6 +41,7 @@ public class HospitalManagementApplication {
 
 
            List<Patient> patients = patientRepository.findAll();
+
            patients.forEach(p->{
                System.out.println(p.toString());
            });
