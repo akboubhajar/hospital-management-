@@ -46,4 +46,24 @@ public class PatientController {
         patientRepository.save(patient);
         return "redirect:/index";
     }
+
+    @GetMapping("/addPatient")
+    public String showAddPatientForm(Model model) {
+        model.addAttribute("patient", new Patient());
+        return "addPatient";
+    }
+
+    @PostMapping("/savePatient")
+    public String save(@ModelAttribute Patient patient) {
+        patientRepository.save(patient);
+        return "redirect:/index";
+    }
+
+    @GetMapping("/search")
+    public String search(@RequestParam(name = "searchTerm") String searchTerm, Model model) {
+        List<Patient> searchResults = patientRepository.findByNomContainingIgnoreCase(searchTerm);
+        model.addAttribute("Listpatients", searchResults);
+        return "patients";
+    }
+
 }

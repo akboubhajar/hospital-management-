@@ -12,10 +12,16 @@
     </div>
 </div>
 <div class="m-2">
+    <form th:action="@{/search}" method="get">
+        <input type="text" name="searchTerm" placeholder="Rechercher par nom...">
+        <button type="submit" class="btn btn-primary">Rechercher</button>
+    </form>
+</div>
+
+<div class="m-2">
     <a class="btn btn-primary" href="/addPatient">Ajouter des patients</a>
     <a class="btn btn-primary" href="/index">Consulter tous les patients</a>
     <a class="btn btn-primary">Consulter un patient</a>
-    <a class="btn btn-primary">Chercher des patients</a>
 </div>
 
 <table class="table">
