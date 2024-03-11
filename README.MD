@@ -16,7 +16,7 @@
 <img src="screens/delete%20button.PNG">
 <hr/>
 
-<img src="screens/edit.PNG">
+<img src="screens/">
 <hr/>
 
 <img src="screens/edit%20patient.PNG">
@@ -25,5 +25,5 @@
 <img src="screens/localhost-index.PNG">
 <hr/>
 
-<img src="screens/localhost-indexx.PNGx.PNG">
+<img src="screens/localhost-indexx.PNG">
 <hr/>
